@@ -1,0 +1,46 @@
+body{
+    font-family: "Jetbrains Mono";
+}
+
+.header {
+    border-radius: 10px;
+}
+
+.border {
+    width: 500px;
+    height: 450px;
+    border: 1px solid #236B8E;
+    border-radius: 10px;
+    background-color: #0088ff;
+}
+
+.btn {
+    padding: 10px 40px;
+    background-color: #0095ff;
+    color: #FFFFFF;
+    font-style: oblique;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.textbox {
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+
+::placeholder {
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.word {
+    color: #FFFFFF;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.bottom {
+    font-style: oblique;
+    font-weight: bold;
+}
