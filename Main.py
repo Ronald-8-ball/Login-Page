@@ -10,10 +10,10 @@ def login():
     if request.method == 'POST' and 'username' in request.form and 'password' in request.form:
         username = request.form['username']
         password = request.form['password']
-        mydb = mysql.connector.connect(host="remotemysql.com",
-                                        user="",
-                                        password="",
-                                        database="")
+        mydb = mysql.connector.connect(host="localhost",
+                                        user="root",
+                                        password="I can use DB",
+                                        database="myDB")
         mycursor = mydb.cursor()
         mycursor.execute(
             'SELECT * FROM LoginDetails WHERE username = %s AND password = %s',
@@ -49,10 +49,10 @@ def register():
         username = request.form['username']
         password = request.form['password']
         email = request.form['email']
-        mydb = mysql.connector.connect(host="remotemysql.com",
-                                        user="wXy63pU5g1",
-                                        password="qVOgRNMGRK",
-                                        database="wXy63pU5g1")
+        mydb = mysql.connector.connect(host="localhost",
+                                        user="root",
+                                        password="I can use DB",
+                                        database="myDB")
         mycursor = mydb.cursor()
         print(username)
         mycursor.execute(
