@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request
 import mysql.connector
 import re
-import sqlite3
 
 app = Flask(__name__)
 app.secret_key = "I can use DB"
